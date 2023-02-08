@@ -21,8 +21,9 @@ spring:
     properties:
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
+
+
   sql.init.mode: always
-#  thymeleaf.cache: false
   data.rest:
     base-path: /api
     detection-strategy: annotated
@@ -36,3 +37,11 @@ spring:
 ##    driverClassName: org.h2.Driver
 ##  sql.init.mode: always
 ##  test.database.replace: none
+#
+spring:
+  jpa:
+    properties:
+      jakarta:
+        persistence:
+          sharedCache:
+            mode: ALL
