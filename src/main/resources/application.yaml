@@ -38,10 +38,10 @@ spring:
 ##  sql.init.mode: always
 ##  test.database.replace: none
 #
-spring:
-  jpa:
-    properties:
-      jakarta:
-        persistence:
-          sharedCache:
-            mode: ALL
+#spring:
+#  jpa:
+#    properties:
+#      jakarta:
+#        persistence:
+#          sharedCache:
+#            mode: ALL
